@@ -13,14 +13,14 @@ void dec_for_bin()
 {
     setlocale(LC_ALL, "Portuguese");
     int n_dec, aux, bin[TAM];
-//Esse tam já foi definido anteriormente em 16 ou seja ex:0000 0000 0000 0000.
-    printf("Digite o número decimal: ");
+//Esse tam jÃ¡ foi definido anteriormente em 16 ou seja ex:0000 0000 0000 0000.
+    printf("Digite o nÃºmero decimal: ");
     scanf("%d", &n_dec);
 
-//Para converter um numero decimal em binario é necessario dividi-lo várias vezes por 2 (base binária)
-//Quando o quociente for menor que 2 a divisão será parada, é coletado os dados do menor para o maior
-// ex: numero 23, 23/2 (tem resto 1) 11/2 (tem resto 1) 5/2 (tem resto 1) 2/2 tem resto 0, sobra 1 e a divisão para.
-// ficando 11101 só que se lê do menor para o maior então o resultado do numero 23 em binário é: 10111
+//Para converter um numero decimal em binario Ã© necessario dividi-lo vÃ¡rias vezes por 2 (base binÃ¡ria)
+//Quando o quociente for menor que 2 a divisÃ£o serÃ¡ parada, Ã© coletado os dados do menor para o maior
+// ex: numero 23, 23/2 (tem resto 1) 11/2 (tem resto 1) 5/2 (tem resto 1) 2/2 tem resto 0, sobra 1 e a divisÃ£o para.
+// ficando 11101 sÃ³ que se lÃª do menor para o maior entÃ£o o resultado do numero 23 em binÃ¡rio Ã©: 10111
 
         for (aux= TAM -1; aux >= 0; aux --)
         {
@@ -29,7 +29,7 @@ void dec_for_bin()
         }
 
         printf( "\n");
-        printf("Este número em binário é:");
+        printf("Este nÃºmero em binÃ¡rio Ã©:");
         for (aux=0; aux < TAM; aux++){
 
         printf("%d",bin[aux]);
@@ -37,13 +37,13 @@ void dec_for_bin()
         }
 
 }
-//Aqui é o menu onde é escolhida a opção de conversão, que no caso deste trabalho é apenas Decimal para Binário.
+//Aqui Ã© o menu onde Ã© escolhida a opÃ§Ã£o de conversÃ£o, que no caso deste trabalho Ã© apenas Decimal para BinÃ¡rio.
 void menu()
 {
     setlocale(LC_ALL, "Portuguese");
     int option = 0;
-    printf ("Calculadora de conversão de bases\n");
-    printf("Digite 0 para converter Decimal em Binário:\n");
+    printf ("Calculadora de conversÃ£o de bases\n");
+    printf("Digite 0 para converter Decimal em BinÃ¡rio:\n");
     scanf("%d", &option);
 
         if (option == 0)
@@ -51,7 +51,7 @@ void menu()
             dec_for_bin();
         } else if (option != 0 && option != 1)
         {
-            printf("Opção inválida. Por favor, tente novamente.");
+            printf("OpÃ§Ã£o invÃ¡lida. Por favor, tente novamente.");
             menu();
         }
 }
@@ -63,9 +63,9 @@ setlocale(LC_ALL, "Portuguese");
 char yes_not;
   menu();
 
-  printf("\nDeseja fazer outro cálculo\?");
+  printf("\nDeseja fazer outro cÃ¡lculo\?");
 
-  printf("\n(s) - Sim\n(n) - Não\n");
+  printf("\n(s) - Sim\n(n) - NÃ£o\n");
 
   scanf(" %s", &yes_not);
 
@@ -83,9 +83,9 @@ char yes_not;
         system ("cls");
         exit(0);
         break;
-// caso digite algo diferente de s ou n, ele irá informar esta mensagem
+// caso digite algo diferente de s ou n, ele irÃ¡ informar esta mensagem
     default:
-        printf("\nPara encerrar o programa digite Sim(s) ou Não(n).\n");
+        printf("\nPara encerrar o programa digite Sim(s) ou NÃ£o(n).\n");
     }
 return 0;
 }
