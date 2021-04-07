@@ -2,10 +2,10 @@
 using namespace std;
 
 int main()
-{   //Alunos: Marcos Kohler, Bruna ThaÌs Rita e Jo„o Vitor Campos.
+{   //Alunos: Marcos Kohler, Bruna Tha√≠s Rita e Jo√£o Vitor Campos.
     setlocale(LC_ALL, "Portuguese");
     int cpf, um, dois, tres, quatro, cinco, seis, sete, oito, nove, soma1, soma2, s_digito, p_digito, re_mod1, re_mod2, aux;
-    cout << "insira um valor inteiro de 8 a 9 dÌgitos:" << endl;
+    cout << "insira um valor inteiro de 8 a 9 d√≠gitos:" << endl;
     cin >>cpf;
     um = cpf/100000000;
     aux = cpf%100000000;
